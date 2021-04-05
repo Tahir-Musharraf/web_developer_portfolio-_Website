@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+
+:root{
+    --darkYellow: #FFD100;
+    --lightYellow: #FFEE32;
+    --black: #000000;
+    --jet: #333533;
+}
+body{
+    position: relative;
+    font-family: 'Arvo', Courier, monospace;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    
+}
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+h1{
+    font-size: 4rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--darkYellow);
+    height: 4.6rem;
+    padding:0 12rem;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    font-size: 0.9rem;
+}
+
+nav > ul > li {
+    margin-right: 1.2rem;
+}
+.logo{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.main-section{
+    height: calc(100vh - 4.6rem);
+    display: grid;
+    grid-template-columns: 70% auto;
+    position: relative;
+}
+.left_side{
+    background-color:var(--lightYellow);
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+    padding-left: 12rem;
+}
+#tag-one{
+    color: var(--jet);
+}
+#tag-two{
+    color: var(--black);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+button{
+    user-select: none;
+    margin-top: 3rem;
+    width: 9.3rem;
+    padding: 0.5rem 0.10rem;
+    border: 2px solid var(--jet);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+button:hover{
+    background-color: var(--lightYellow);
+    color: var(--jet);
+    border-color: white;
+}
+button:focus{
+    border-radius: 20px;
+    outline: none;
+}
+.right_side{
+    position: absolute;
+    top: 25%;
+    right: 20%;
+}
+img{
+    width: 100%;
+}
+#my_work{
+    padding-left: 12rem;
+    margin-top: 6.45rem;
+    font-weight: 700;
+
+}
+.heading_b1,
+.heading_b2{
+    margin-top: 1rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: normal;
+    cursor: pointer;
+}
+.heading_b2{
+    text-align: right;
+    margin-right: 12rem;
+}
+.img_right,
+.img_left{
+    margin-top: 3rem;
+    margin-left: 15rem;
+    border: 2px solid var(--darkYellow);
+    cursor: pointer;
+}
+.img_right{
+    margin-left: -15rem;
+    width: 100%;
+}
+#hire_me{
+    margin-top: 6.45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--lightYellow);
+}
+.hire_me_title{
+    margin: 1.3rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.contact_box{
+    padding: 1.876rem;
+    display: flex;
+    flex-direction: column;
+}
+.contact_box > div {
+    margin-top: 0.9rem;
+}
+.contact_container{
+    display: flex;
+    justify-content: center;
+}
+.contact_container > span {
+    width: 50%;
+}
+.contact_container > input,
+.contact_container > select {
+    width: 50%;
+}
+input[type="text"],
+select,
+textarea {
+    color: var(--darkYellow);
+    background-color : var(--black); 
+}
+.messgae_box{
+    display: flex;
+    flex-direction: column;
+}
+::placeholder{
+    color: var(--darkYellow);
+}
+#submit{
+    color: var(--lightYellow);
+    background-color: var(--black);
+}
+footer{
+    display: flex;
+    padding: 3rem;
+    text-transform: uppercase;
+    font-weight: 700px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkYellow);
+}
+.back_btn{
+    user-select: none;
+    position: sticky;
+    position: -webkit-sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    left: 90%;
+    height: 45px;
+    width: 100px;
+    background-color: var(--lightYellow);
+    color: var(--jet);
+    border: 1px solid white;
+    cursor: pointer;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahir Musharraf - Full Stack Web Developer</title>
+    <link rel="stylesheet" href="inc/css/style.css">
+</head>
+<body>
+    <header id='header'>
+        <div class="logo">Tahir Musharraf</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#my_work">My Work</a></li>
+                <li><a href="#hire_me">HIRE ME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-section" id="home">
+        <div class="left_side">
+            <span id='tag-one'>Hi, I'm</span>
+            <h1>tahir <br/>musharraf</h1>
+            <span id='tag-two'>full stack web developer</span>
+            <form action="#my_work">
+            <button>👇 See My Work</button>
+            </form>
+            <div class="right_side">
+                <svg width="160" height="243" viewBox="0 0 160 243" fill="none">
+                    <path d="M0 93C0 81.9543 8.95431 73 20 73H140C151.046 73 160 81.9543 160 93V147C160 158.046 151.046 167 140 167H20C8.95431 167 0 158.046 0 147V93Z" fill="#333533"/>
+                    <rect opacity="0.6" x="81" y="1" width="39" height="241" rx="19.5" fill="#D6D6D6" stroke="#FFD100" stroke-width="2"/>
+                    </svg>
+            </div>
+        </div>
+    </section>
+    <section id="my_work">
+        MY WORK
+        <div class="box1">
+            <div class="heading_b1">RIM & TYRE e-commerce website</div>
+            <div class="img_left"><img src="inc/images/jouwvelgen screenshot.png" alt="Jouwvelgen"></div>
+        </div>
+        <div class="box2">
+            <div class="heading_b2">Weflow website</div>
+            <div class="img_right"><img src="inc/images/cocomi.webflow.io_.png" alt="Cocomi"></div>
+        </div>
+    </section>
+    <section id="hire_me">
+        <div class="hire_me_title">HIRE ME</div>
+        <div class="contact_box">
+                <div class="contact_container"> 
+                   <span>Name</span><input type="text" name="name" id="user_name" placeholder="Enter your name"></div>
+                <div class="contact_container"><span>Website</span> <input type="text" name="url" id="user_website"placeholder="Enter your website URL"></div>
+                <div class="contact_container"><span>Budget</span>
+                    <select name="budget">
+                        <option value="">Your estimated Budget</option>
+                        <option value="1">$200 - $500</option>
+                        <option value="2">$500 - $1,000</option>
+                        <option value="3">$1k - $3k</option>
+                        <option value="4">$3k - $5k</option>
+                        <option value="5">$5+</option>
+                    </select></div>
+                <div class="contact_container messgae_box">
+                    <span>Project details</span> <br/>
+                    <textarea style='resize: vertical;' placeholder="I'm looking for landing page for my saas bussiness..." name="messgae" id="user_message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="contact_container"><button id='submit'>Submit</button></div>
+        </div>
+    </section>
+    <footer>
+        Copyright 2021 - Tahir Musharraf
+
+    </footer>
+    
+    <div class="back_btn"><a href="#header">👆 Go up</a></div>
+    
+</body>
+</html>
